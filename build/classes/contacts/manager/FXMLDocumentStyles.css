@@ -1,0 +1,12 @@
+.split-pane > .split-pane-divider {
+    -fx-background-color: '#d6d6d6';
+    -fx-background-radius: 0;
+    -fx-padding: 0.5px; /*asjust the padding to change the size of the divider*/
+}
+
+.scroll-bar { 
+    -fx-background-color: '#fff';
+    -fx-color: '#fff';
+    -fx-effect: 0;
+    -fx-border-color: '#d6d6d6';
+}

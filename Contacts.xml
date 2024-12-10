@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<contacts>
+    <contact>
+        <name>John Doe</name>
+        <phone>555-1234</phone>
+        <email>john.doe@example.com</email>
+        <address>
+            <street>123 Main St</street>
+            <city>Cityville</city>
+            <state>CA</state>
+            <zipCode>12345</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <name>Jane Smith</name>
+        <phone>555-5678</phone>
+        <email>jane.smith@example.com</email>
+        <address>
+            <street>456 Oak Ave</street>
+            <city>Townsville</city>
+            <state>NY</state>
+            <zipCode>67890</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <name>Alice Johnson</name>
+        <phone>555-9876</phone>
+        <email>alice.johnson@example.com</email>
+        <address>
+            <street>789 Pine St</street>
+            <city>Villagetown</city>
+            <state>TX</state>
+            <zipCode>54321</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <name>Bob Williams</name>
+        <phone>555-5432</phone>
+        <email>bob.williams@example.com</email>
+        <address>
+            <street>101 Cedar Ave</street>
+            <city>Hamletsville</city>
+            <state>FL</state>
+            <zipCode>98765</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <name>Eva Davis</name>
+        <phone>555-8765</phone>
+        <email>eva.davis@example.com</email>
+        <address>
+            <street>202 Maple St</street>
+            <city>Suburbia</city>
+            <state>IL</state>
+            <zipCode>13579</zipCode>
+        </address>
+    </contact>
+<contact>
+<id>5</id>
+<name>test name</name>
+<phone>00000000</phone>
+<email>dedede</email>
+<adress/>
+</contact>
+</contacts>

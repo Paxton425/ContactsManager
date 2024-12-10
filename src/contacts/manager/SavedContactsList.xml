@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<contacts>
+    <contact>
+        <id>1</id>
+        <name>John Doe</name>
+        <phone>555-1234</phone>
+        <email>john.doe@example.com</email>
+        <address>
+            <street>123 Main St</street>
+            <city>Cityville</city>
+            <state>CA</state>
+            <zipCode>12345</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <id>2</id>
+        <name>Jane Smith</name>
+        <phone>555-5678</phone>
+        <email>jane.smith@example.com</email>
+        <address>
+            <street>456 Oak Ave</street>
+            <city>Townsville</city>
+            <state>NY</state>
+            <zipCode>67890</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <id>3</id>
+        <name>Alice Johnson</name>
+        <phone>555-9876</phone>
+        <email>alice.johnson@example.com</email>
+        <address>
+            <street>789 Pine St</street>
+            <city>Villagetown</city>
+            <state>TX</state>
+            <zipCode>54321</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <id>4</id>
+        <name>Bob Williams</name>
+        <phone>555-5432</phone>
+        <email>bob.williams@example.com</email>
+        <address>
+            <street>101 Cedar Ave</street>
+            <city>Hamletsville</city>
+            <state>FL</state>
+            <zipCode>98765</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <id>5</id>
+        <name>Eva Davis</name>
+        <phone>555-8765</phone>
+        <email>eva.davis@example.com</email>
+        <address>
+            <street>202 Maple St</street>
+            <city>Suburbia</city>
+            <state>IL</state>
+            <zipCode>13579</zipCode>
+        </address>
+    </contact>
+
+    <contact>
+        <id>6</id>
+        <name>Harley Quin</name>
+        <phone>082543322</phone>
+        <email>harley@email.com</email>
+        <address>
+            <street>st street</street>
+            <city>Liberty City</city>
+            <state>New York</state>
+            <zipCode>2345</zipCode>
+        </address>
+    </contact>
+<contact>
+        <id>6</id>
+        <name>Rob Williams</name>
+        <phone>333-2625</phone>
+        <email>rob@email.com</email>
+        <address>
+            <street>LE St</street>
+            <city>LA</city>
+            <state>Hollywood</state>
+            <zipCode>2234</zipCode>
+        </address>
+    </contact>
+
+
+<contact>
+        <id>7</id>
+        <name>Keith Robinson</name>
+        <phone>566-7755</phone>
+        <email>keth.robinson@email.com</email>
+        <address>
+            <street>Luke Street</street>
+            <city>Amsterdam</city>
+            <state>Atlanta</state>
+            <zipCode>2234</zipCode>
+        </address>
+    </contact>
+
+<contact>
+        <id>8</id>
+        <name>Peter Griffin</name>
+        <phone>653-445</phone>
+        <email>peter.familyguy@email.com</email>
+        <address>
+            <street>Spooner Street</street>
+            <city>Quahog</city>
+            <state>New York</state>
+            <zipCode>4567</zipCode>
+        </address>
+    </contact>
+<contact>
+        <id>10</id>
+        <name>asa</name>
+        <phone>232</phone>
+        <email>asa@sa</email>
+        <address>
+            <street>asa</street>
+            <city>asa</city>
+            <state>as</state>
+            <zipCode>21</zipCode>
+        </address>
+    </contact>
+</contacts>
