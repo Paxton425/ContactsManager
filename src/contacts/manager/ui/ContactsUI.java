@@ -34,7 +34,7 @@ public class ContactsUI {
         contactItem.setStyle("-fx-background-color: #FFF; -fx-border-color: #D6D6D6;");
         contactItem.setAlignment(Pos.BASELINE_LEFT);
         contactItem.setTextFill(Paint.valueOf("#5e5e5e"));
-        contactItem.setPrefHeight(100);
+        contactItem.setPrefHeight(50);
 
         // Change color on mouse enter
         contactItem.setOnMouseEntered(e -> {
@@ -56,8 +56,8 @@ public class ContactsUI {
         return contactItem;
     }
     
-    public Label getTopLabel(String text){
-        Label label = new Label("text");
+    public Label getStateMessage(String text){
+        Label label = new Label(text);
         label.setAlignment(Pos.CENTER);
         label.setPrefHeight(17.0);
         return label;

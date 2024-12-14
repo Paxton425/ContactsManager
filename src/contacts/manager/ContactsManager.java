@@ -291,7 +291,9 @@ public class ContactsManager {
     
     protected Contact[] getContacts()
     {
-        return contacts;
+        if(contacts[0].Name != null)
+            return contacts;
+        return null;
     }
     
     protected int getContactsCount(){

@@ -9,14 +9,17 @@
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" fx:id="rootAchorPane" minHeight="-Infinity" prefHeight="442.0" prefWidth="752.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #D6D6D6; -fx-border-width: 0.5;" stylesheets="@FXMLDocumentStyles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contacts.manager.FXMLDocumentController">
     <children>
-      <SplitPane fx:id="mainSplitPain" dividerPositions="0.2923898531375167" prefHeight="200.0" prefWidth="200.0" style="-fx-border-width: 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane fx:id="mainSplitPain" dividerPositions="0.2923898531375167" style="-fx-border-width: 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <items>
             <VBox fx:id="sideBarVBox" maxWidth="234.0" prefHeight="439.0" prefWidth="234.0">
                <children>
@@ -36,7 +39,7 @@
                   </Pane>
                </children>
             </VBox>
-            <VBox fx:id="seccondParentPane" minWidth="-Infinity" prefHeight="438.0" prefWidth="514.0">
+            <VBox fx:id="seccondParentPane" minWidth="-Infinity" prefWidth="514.0">
                <children>
                   <AnchorPane prefHeight="41.0" prefWidth="506.0" style="-fx-border-color: #d6d6d6;">
                      <children>
@@ -64,26 +67,48 @@
                             </Menu>
                           </menus>
                         </MenuBar>
-                          <Button fx:id="searchButton" disable="true" layoutX="121.0" layoutY="3.0" minWidth="60.0" onAction="#handleSearchAction" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: #139cf7; -fx-background-radius: 10; -fx-border-color: 0;" text="Search" textFill="WHITE" AnchorPane.topAnchor="7.0">
+                          <Button fx:id="searchButton" disable="true" layoutX="121.0" layoutY="3.0" minWidth="60.0" onAction="#handleSearchAction" prefWidth="67.0" style="-fx-background-color: #139cf7; -fx-background-radius: 10; -fx-border-color: 0;" text="Search" textFill="WHITE" AnchorPane.topAnchor="7.0">
                            <font>
                               <Font name="Corbel Bold" size="14.0" />
                            </font>
                         </Button>
-                          <TextField fx:id="contactSearchBox" layoutX="200.0" layoutY="3.0" prefHeight="25.0" prefWidth="144.0" promptText="Contact Name" style="-fx-background-color: transparent; -fx-border-color: #d6d6d6; -fx-border-radius: 20;" AnchorPane.bottomAnchor="6.0" AnchorPane.topAnchor="7.0">
-                           <font>
-                              <Font name="Corbel" size="16.0" />
-                           </font>
-                        </TextField>
+                        <StackPane alignment="CENTER_LEFT" layoutX="200.0" layoutY="8.0" AnchorPane.bottomAnchor="6.0" AnchorPane.topAnchor="7.0">
+                           <children>
+                                <TextField fx:id="contactSearchBox" accessibleHelp="Search" prefHeight="25.0" prefWidth="160.0" promptText="Contact Name" style="-fx-background-color: transparent; -fx-border-color: #d6d6d6; -fx-border-radius: 20;">
+                                 <font>
+                                    <Font name="Corbel" size="16.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                                 <padding>
+                                    <Insets left="30.0" />
+                                 </padding>
+                              </TextField>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/icons/icons8-magnifying-glass-94.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets left="7.0" top="1.0" />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="contactsPane" style="-fx-background-color: #d6d6d6;">
+                  <AnchorPane fx:id="contactsPane" style="-fx-background-color: #d6d6d6;" VBox.vgrow="ALWAYS">
                      <children>
-                        <ScrollBar orientation="VERTICAL" prefHeight="395.0" prefWidth="16.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                        <VBox fx:id="contactsListVBox" minWidth="-Infinity" prefHeight="395.0" prefWidth="512.0" style="-fx-padding: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
-                           <padding>
-                              <Insets left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                        </VBox>
+                        <ScrollBar fx:id="contactsScrollBar" orientation="VERTICAL" prefWidth="15.0" visibleAmount="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Pane fx:id="clipPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox fx:id="contactsListVBox" minWidth="-Infinity" prefWidth="512.0" style="-fx-padding: 10;">
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </Pane>
                      </children>
                   </AnchorPane>
                </children>
